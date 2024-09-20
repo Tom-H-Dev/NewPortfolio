@@ -116,6 +116,10 @@ body {
     margin-bottom: 150px;
 }
 
+.section-headings-projects {
+    margin-bottom: 150px;
+}
+
 .section-headings h1 {
     text-transform: uppercase;
     font-size: 6rem;
@@ -520,6 +524,8 @@ body {
         width: 100%;
         padding: 20px 0;
     }
+
+    
     /* section: portfolio */
     
     
