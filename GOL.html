@@ -48,10 +48,9 @@
         }
 
         .project-image-box img {
-            width: 300px;
-            height: 180px;
+            height: 400px;
             object-fit: scale-down;
-            border-radius: 4px;
+            border-radius: 40px;
         }
 
         .project-card h3 {
@@ -81,6 +80,10 @@
         .project-link svg {
             width: 24px;
             fill: #fff;
+        }
+        .project-video{
+            width: 60%;
+            padding-bottom: 50px;
         }
     </style>
 </head>
@@ -130,12 +133,14 @@
                         </div>
                             
                         <h3>Objective: The goal of this project was to recreate Conway's Game of Life, a classic cellular automaton simulation, within a one-week period using Unity and C#. The focus was on implementing the core mechanics of the game while ensuring a smooth user experience and performance optimization.
+                        
+                        </h3><h3>What is Conway's Game of Life? Conway's Game of Life, created by British mathematician John Conway in 1970, is a zero-player simulation where cells on a grid live, die, or reproduce based on simple rules. It's a well-known example of a cellular automaton, showing how complex patterns can emerge from simple, local interactions.
                         </h3><h3>Tech Stack: Unity for grid visualization and game management, and C# for logic implementation.
                         </h3><h3>Key Features: The project featured a dynamic, adjustable 2D grid system where cells behaved according to the classic Game of Life rules. A minimalistic UI allowed users to control the simulation by starting, stopping, adjusting the speed, and randomizing the grid. Performance optimizations were implemented to handle larger grid sizes smoothly by updating only the necessary cells each generation.
                         </h3><h3>Problems/Struggles: During this project I have spent half my time specing on a system to check all the positions with a nested for loop instead just checking with a couple of if statements. Next to that I made am instantiating GameObjects at the beginning and then changing the texture on them. This is very heavy for the computer and could be reworked to be less intensive on the computer.
                         </h3> 
 
-
+                        <video src="./assets/videos/snowiesnow/snowie-snow.mp4" autoplay muted loop class="project-video"></video>
                                                     
                         <div class="row">
                             <div class="col">
@@ -151,6 +156,7 @@
                                 </a>
                             </div>
                         </div>
+                        <h3><b>If you have enjoyed this read or have any questions feel free to cantact me!</b></h3>
 
                     </div>
                 </div>
