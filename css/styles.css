@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
-    cursor: none;
+    cursor: auto;
 }
 
 html {
@@ -21,7 +21,7 @@ body {
 }
 
 
-.cursor {
+/* .cursor {
     width: 48px;
     height: 48px;
     border-radius: 100%;
@@ -46,18 +46,18 @@ body {
     pointer-events: none;
     transition: width .3s, height .3s, opacity .3s;
     z-index: 999999999;
-}
+} */
 
 .hover {
     background-color: rgb(67, 67, 67);
     opacity: 0.3;
 }
 
-.cursorinnerhover {
+/* .cursorinnerhover {
     width: 50px;
     height: 50px;
     opacity: .5;
-}
+} */
 
 
 
