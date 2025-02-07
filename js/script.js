@@ -70,3 +70,16 @@ function closeFullScreenNav() {
     navFullScreen.classList.remove("nav-fullscreen-open")
     
 }
+
+// Find all portfolio card details
+const portfolioCards = document.querySelectorAll('.portfolio-card-details');
+
+// Loop through each portfolio card and check button count
+portfolioCards.forEach(card => {
+    const buttonsContainer = card.querySelector('.buttons');
+    if (buttonsContainer && buttonsContainer.children.length === 1) {
+        buttonsContainer.classList.add('single-button');
+    } else {
+        buttonsContainer.classList.remove('single-button');
+    }
+});

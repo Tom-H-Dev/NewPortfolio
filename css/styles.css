@@ -412,7 +412,7 @@ body {
 
 
 /* desktop */
-@media screen and (min-width: 768px) {
+/*media screen and (min-width: 768px) {
     .section-hero .hero-skill-heading:hover::after {
         content: attr(data-text);
         position: absolute;
@@ -426,11 +426,94 @@ body {
         top: -3rem;
     }
     .portfolio-card:hover img {
-        transition: 200ms;
-        transform: scale(1.2) rotate(-10deg) ;
-        filter: drop-shadow(4px 4px 40px rgba(255,255,255, 0.3));
+        filter: drop-shadow(4px 4px 40px rgba(255, 255, 255, 0.3)) blur(5px);
     }
+    .portfolio-card-text {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 8px 12px;
+        border-radius: 5px;
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
+    }
+}*/.portfolio-card {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
 }
+
+.portfolio-card img {
+    transition: 200ms;
+}
+
+.portfolio-card:hover img {
+    filter: drop-shadow(4px 4px 40px rgba(255, 255, 255, 0.3)) blur(5px);
+}
+
+.portfolio-card-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;  /* Padding remains the same */
+    width: 70%;  /* Adjust width for a wider box */
+    max-width: 300px;  /* Optional: sets a maximum width */
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+
+
+.portfolio-card:hover .portfolio-card-text {
+    opacity: 1;
+}
+
+.portfolio-card-details {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;  /* Adds space between buttons */
+    justify-content: center;  /* Centers buttons when there are two */
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;  /* Default width for buttons */
+    margin-top: 7px;
+}
+
+/* If there is only one button, it takes up the full width */
+.portfolio-card-details .buttons.single-button .btn {
+    width: 100%;  /* Makes the button fill the container */
+}
+
+/* Optional: Styling for the card and other elements */
+.portfolio-card {
+    display: block;
+    position: relative;
+}
+
+
 
 
 /* mobile, tablet */
