@@ -501,6 +501,10 @@ body {
     position: relative;
 }
 
+.portfolio-card-image {
+    border-radius: 15px;
+}
+
 
 
 
